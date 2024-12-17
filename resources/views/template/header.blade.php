@@ -100,7 +100,7 @@
                                                     alt="{{ Auth::user()->name }}">
                                             </div>
                                             <div class="admin-info">
-                                                <span class="name">{{ Auth::user()->name }}</span>
+                                                <span class="name">{{ explode(' ', Auth::user()->name)[0] }}</span>
                                                 <a class="rbt-btn-link color-primary"
                                                     href="{{ route('profile.index', Auth::user()->username) }}">View
                                                     Profile</a>

@@ -42,7 +42,6 @@ class MaterialController extends Controller
         return response()->json($material);
     }
 
-
     public function update(Request $request, $id)
     {
         $validated = $request->validate([
@@ -64,4 +63,14 @@ class MaterialController extends Controller
             ->with('success', 'Material successfully updated.');
     }
 
+    public function destroy($id)
+    {
+        $material = Material::findOrFail($id);
+        $courseSlug = $material->course->slug;
+
+        $material->delete();
+
+        return redirect()->route('admin.course.edit', $courseSlug)
+            ->with('success', 'Material successfully deleted.');
+    }
 }

@@ -111,6 +111,14 @@ class ArticleController extends Controller
 
     public function destroy(string $id)
     {
-        //
+        $article = Article::findOrFail($id);
+
+        if ($article->thumbnail) {
+            Storage::disk('public')->delete($article->thumbnail);
+        }
+
+        $article->delete();
+
+        return redirect()->route('admin.article.index')->with('success', 'Article deleted successfully!');
     }
 }

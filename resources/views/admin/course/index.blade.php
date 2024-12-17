@@ -71,10 +71,11 @@
                                                             <span class="h6 mb--5">{{ $course_data->category->name }}</span>
                                                         </td>
                                                         <td>
-                                                            <a href="{{ route('course.show', $course_data->id) }}"
+                                                            <a data-bs-toggle="modal"
+                                                                data-bs-target="#contentModal-{{ $course_data->id }}"
+                                                                type="button"
                                                                 class="badge bg-primary text-white content-btn"
-                                                                data-id="{{ $course_data->id }}" data-bs-toggle="modal"
-                                                                data-bs-target="#contentModal-{{ $course_data->id }}">View
+                                                                data-id="{{ $course_data->id }}">View
                                                                 Description
                                                             </a>
                                                         </td>
@@ -87,9 +88,13 @@
                                                                     class="rbt-btn-link left-icon text-primary">
                                                                     <i class="feather-edit"></i> Edit
                                                                 </a>
-                                                                <a class="rbt-btn-link left-icon text-danger"
-                                                                    href="#"><i class="feather-trash-2"></i>
-                                                                    Delete</a>
+
+                                                                <a data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal-{{ $course_data->id }}"
+                                                                    type="button"
+                                                                    class="rbt-btn-link left-icon text-danger">
+                                                                    <i class="feather-trash-2"></i> Delete
+                                                                </a>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -111,7 +116,7 @@
         @include('admin.course.create')
 
         @foreach ($courses as $course_data)
-            @include('admin.article.content', ['article_data' => $course_data])
+            @include('admin.course.content', ['course_data' => $course_data])
             @include('admin.course.delete', ['course_data' => $course_data])
         @endforeach
 

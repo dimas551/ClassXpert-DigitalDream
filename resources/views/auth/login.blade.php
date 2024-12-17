@@ -39,12 +39,6 @@
                                         <label for="remember_me">Remember me</label>
                                     </div>
                                 </div>
-                                @if (Route::has('password.request'))
-                                    <div class="col-lg-6 text-end">
-                                        <a class="rbt-btn-link" href="{{ route('password.request') }}">Lost your
-                                            password?</a>
-                                    </div>
-                                @endif
                             </div>
 
                             <div class="form-submit-group mb-3">

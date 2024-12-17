@@ -55,9 +55,9 @@ class FaqController extends Controller
 
     public function destroy($id)
     {
-        $faqs = Faq::findOrFail($id);
-        $faqs->delete();
+        $faq = Faq::findOrFail($id);
+        $faq->delete();
 
-        return redirect()->route('admin.faq.index')->with('success', 'Faq deleted successfully!');
+        return redirect()->route('admin.faq.index')->with('success', 'FAQ deleted successfully!');
     }
 }

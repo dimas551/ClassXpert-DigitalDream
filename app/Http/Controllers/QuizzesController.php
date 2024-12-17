@@ -58,6 +58,8 @@ class QuizzesController extends Controller
             $query->where('slug', $slug);
         })->findOrFail($quizId);
 
+        $course = $quiz->course;
+
         $submission = Submission::where('user_id', auth()->id())
             ->where('quiz_id', $quiz->id)
             ->first();
@@ -67,74 +69,64 @@ class QuizzesController extends Controller
         }
 
         $userAnswers = json_decode($submission->answers, true);
-
         $score = $submission->score;
 
-        return view('app.quiz.result', compact('quiz', 'score', 'userAnswers'));
+        return view('app.quiz.result', compact('quiz', 'score', 'userAnswers', 'course'));
     }
 
     public function store(Request $request)
-{
-    // Validasi input
-    $request->validate([
-        'title' => 'required|string|max:255',
-        'questions' => 'required|array|min:1|max:5',  // Pastikan ada soal
-        'questions.*.question' => 'required|string|max:255',  // Soal harus ada
-        'questions.*.options' => 'required|array|min:2|max:6',  // Opsi harus ada
-        'questions.*.options.*' => 'required|string|max:255',  // Setiap opsi harus string
-        'questions.*.answer' => 'required|string|max:255',  // Jawaban harus ada
-    ]);
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'questions' => 'required|array|min:1|max:5',
+            'questions.*.question' => 'required|string|max:255',
+            'questions.*.options' => 'required|array|min:2|max:6',
+            'questions.*.options.*' => 'required|string|max:255',
+            'questions.*.answer' => 'required|string|max:255',
+        ]);
 
-    // Menyusun array soal dalam format yang benar
-    $questions = array_map(function ($question) {
-        return [
-            'question' => $question['question'],
-            'options' => $question['options'],
-            'answer' => $question['answer'],
-        ];
-    }, $request->questions);
+        $questions = array_map(function ($question) {
+            return [
+                'question' => $question['question'],
+                'options' => $question['options'],
+                'answer' => $question['answer'],
+            ];
+        }, $request->questions);
 
-    // Menyimpan quiz dalam tabel
-    $quiz = new Quiz();
-    $quiz->title = $request->title;
-    $quiz->question = json_encode($questions);  // Menyimpan soal dalam format JSON
-    $quiz->save();
+        $quiz = new Quiz();
+        $quiz->title = $request->title;
+        $quiz->question = json_encode($questions);
+        $quiz->save();
 
-    // Redirect dengan pesan sukses
-    return redirect()->route('quiz.index')->with('success', 'Quiz created successfully!');
-}
+        return redirect()->route('quiz.index')->with('success', 'Quiz created successfully!');
+    }
 
-public function update(Request $request, $id)
-{
-    // Validasi input
-    $request->validate([
-        'title' => 'required|string|max:255',
-        'questions' => 'required|array|min:1|max:5',
-        'questions.*.question' => 'required|string|max:255',
-        'questions.*.options' => 'required|array|min:2|max:6',
-        'questions.*.options.*' => 'required|string|max:255',
-        'questions.*.answer' => 'required|string|max:255',
-    ]);
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'questions' => 'required|array|min:1|max:5',
+            'questions.*.question' => 'required|string|max:255',
+            'questions.*.options' => 'required|array|min:2|max:6',
+            'questions.*.options.*' => 'required|string|max:255',
+            'questions.*.answer' => 'required|string|max:255',
+        ]);
 
-    // Temukan quiz berdasarkan ID
-    $quiz = Quiz::findOrFail($id);
-    $quiz->title = $request->title;
+        $quiz = Quiz::findOrFail($id);
+        $quiz->title = $request->title;
 
-    // Menyusun array soal dalam format yang benar
-    $questions = array_map(function ($question) {
-        return [
-            'question' => $question['question'],
-            'options' => $question['options'],
-            'answer' => $question['answer'],
-        ];
-    }, $request->questions);
+        $questions = array_map(function ($question) {
+            return [
+                'question' => $question['question'],
+                'options' => $question['options'],
+                'answer' => $question['answer'],
+            ];
+        }, $request->questions);
 
-    $quiz->question = json_encode($questions);  // Update soal dalam format JSON
-    $quiz->save();
+        $quiz->question = json_encode($questions);
+        $quiz->save();
 
-    // Redirect dengan pesan sukses
-    return redirect()->route('quiz.index')->with('success', 'Quiz updated successfully!');
-}
-
+        return redirect()->route('quiz.index')->with('success', 'Quiz updated successfully!');
+    }
 
 }

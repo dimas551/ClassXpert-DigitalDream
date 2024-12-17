@@ -61,6 +61,7 @@ Route::middleware(['auth', 'auth.admin'])->group(function () {
     Route::post('/admin/material', [MaterialController::class, 'store'])->name('material.store');
     Route::get('/admin/material/{slug}/get', [MaterialController::class, 'edit'])->name('material.edit');
     Route::put('/admin/material/{id}', [MaterialController::class, 'update'])->name('material.update');
+    Route::delete('/admin/material/{id}', [MaterialController::class, 'destroy'])->name('material.destroy');
 
     Route::post('/admin/quiz', [QuizzesController::class, 'store'])->name('quiz.store');
     Route::get('/admin/quiz/{slug}/get', [QuizzesController::class, 'edit'])->name('quiz.edit');
@@ -98,6 +99,12 @@ Route::middleware(['auth', 'auth.admin'])->group(function () {
     Route::get('/admin/admin/{id}/get', [AdminController::class, 'show'])->name('admin.show');
     Route::put('/admin/admin/{id}', [AdminController::class, 'update'])->name('admin.update');
     Route::delete('/admin/admin/{id}', [AdminController::class, 'destroy'])->name('admin.destroy');
+
+    // Mail
+    Route::get('/admin/mail', [MailController::class, 'admin'])->name('admin.mail.index');
+    Route::post('/admin/mail', [MailController::class, 'store'])->name('mail.store');
+    Route::get('/admin/mail/{id}/get', [MailController::class, 'show'])->name('mail.show');
+    Route::delete('/admin//mail/{id}', [MailController::class, 'destroy'])->name('mail.destroy');
 
 });
 

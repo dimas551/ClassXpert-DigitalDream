@@ -125,7 +125,6 @@ class CourseController extends Controller
         ));
     }
 
-
     public function showMaterial($slug, $materialId)
     {
         $material = Material::whereHas('course', function ($query) use ($slug) {

@@ -1,8 +1,8 @@
-<div class="rbt-team-modal modal fade rbt-modal-default" tabindex="-1" id="deleteModal-{{ $faq_data->id }}"
-    aria-labelledby="deleteModal-{{ $faq_data->id }}" aria-hidden="true">
+<div class="rbt-team-modal modal fade rbt-modal-default" tabindex="-1" id="deleteMaterial-{{ $material->id }}"
+    aria-labelledby="deleteMaterial-{{ $material->id }}" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <form method="POST" action="{{ route('faq.destroy', $faq_data->id) }}">
+            <form method="POST" action="{{ route('material.destroy', $material->id) }}">
                 @csrf
                 @method('DELETE')
                 <div class="modal-header border-0">

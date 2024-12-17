@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             ArticleSeeder::class,
             FaqSeeder::class,
             WebsiteSeeder::class,
+            MailSeeder::class,
         ]);
     }
 }

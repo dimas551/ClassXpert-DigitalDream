@@ -155,98 +155,59 @@
 
                                     <hr class="mt--30">
 
-                                    <div class="row mt-2">
-                                        <div class="col-md-6">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="text-primary mb-0">Material</h4>
-                                                <a class="rbt-btn btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#materialModal">
-                                                    <span>Create Material</span>
-                                                </a>
+                                    <div class="container-fluid mt-2">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="text-primary mb-0">Material</h4>
+                                                    <a class="rbt-btn btn-sm" data-bs-toggle="modal"
+                                                        data-bs-target="#materialModal">
+                                                        <span>Create Material</span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="text-primary">Quiz</h4>
-                                                <a class="rbt-btn btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#quizModal">
-                                                    <span>Create Quiz</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <div class="rbt-dashboard-table table-responsive mobile-table-750 mt--30">
-                                                <table class="rbt-table table table-borderless">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Material Title</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($materials as $material)
+                                        <div class="row">
+                                            <div class="col-md-12 mb-4">
+                                                <div class="rbt-dashboard-table table-responsive mobile-table-750 mt--30">
+                                                    <table class="rbt-table table table-borderless">
+                                                        <thead>
                                                             <tr>
-                                                                <th>
-                                                                    <span class="h6 mb--5">{{ $material->title }}</span>
-                                                                </th>
-                                                                <td>
-                                                                    <div class="rbt-button-group justify-content-end">
-                                                                        <a data-bs-toggle="modal"
-                                                                            data-bs-target="#materialModal" type="button"
-                                                                            data-id="{{ $material->id }}"
-                                                                            class="btn-edit rbt-btn-link left-icon text-primary">
-                                                                            <i class="feather-edit"></i> Edit
-                                                                        </a>
-
-                                                                        <a class="rbt-btn-link left-icon" href="#"
-                                                                            onclick="deleteMaterial({{ $material->id }})">
-                                                                            <i class="feather-trash-2"></i> Delete
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
+                                                                <th>Material Title</th>
+                                                                <th></th>
                                                             </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($materials as $material)
+                                                                <tr>
+                                                                    <th>
+                                                                        <span
+                                                                            class="h6 mb--5">{{ $material->title }}</span>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div class="rbt-button-group justify-content-end">
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#materialModal"
+                                                                                type="button"
+                                                                                data-id="{{ $material->id }}"
+                                                                                class="btn-edit rbt-btn-link left-icon text-primary">
+                                                                                <i class="feather-edit"></i> Edit
+                                                                            </a>
 
-                                        <div class="col-md-6 mb-4">
-                                            <div class="rbt-dashboard-table table-responsive mobile-table-750 mt--30">
-                                                <table class="rbt-table table table-borderless">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Quiz Title</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($quizzes as $quiz)
-                                                            <tr>
-                                                                <th>
-                                                                    <span class="h6 mb--5">{{ $quiz->title }}</span>
-                                                                </th>
-                                                                <td>
-                                                                    <div class="rbt-button-group justify-content-end">
-                                                                        <a class="btn-edit rbt-btn-link left-icon"
-                                                                            href="#" data-bs-toggle="modal"
-                                                                            data-bs-target="#editQuizModal{{ $quiz->id }}">
-                                                                            <i class="feather-edit"></i> Edit
-                                                                        </a>
-
-                                                                        <a class="rbt-btn-link left-icon" href="#"
-                                                                            onclick="deleteQuiz({{ $quiz->id }})">
-                                                                            <i class="feather-trash-2"></i> Delete
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
+                                                                            <a data-bs-toggle="modal"
+                                                                                data-bs-target="#deleteMaterial-{{ $material->id }}"
+                                                                                type="button"
+                                                                                class="rbt-btn-link left-icon text-danger">
+                                                                                <i class="feather-trash-2"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -262,15 +223,11 @@
 
         @foreach ($materials as $material)
             @include('admin.course.material', ['material' => $material])
-        @endforeach
-
-        @foreach ($quizzes as $quiz)
-            @include('admin.course.quiz', ['quiz' => $quiz])
+            @include('admin.course.deleteMaterial', ['material' => $material])
         @endforeach
 
     </main>
 
     <script src="{{ asset('assets/js/admin/material.js') }}"></script>
-    <script src="{{ asset('assets/js/admin/quiz.js') }}"></script>
 
 @endsection

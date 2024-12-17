@@ -16,7 +16,8 @@ class HomeController extends Controller
         $faqs = Faq::latest()->take(4)->get();
         $reviews = Review::with('user')->latest()->take(3)->get();
 
-        $courses = Course::withCount(['quizzes', 'reviews'])
+        $courses = Course::published()
+            ->withCount(['quizzes', 'reviews'])
             ->withCount([
                 'quizzes as submissions_count' => function ($query) {
                     $query->withCount('submissions');
