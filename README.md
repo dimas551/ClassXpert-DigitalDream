@@ -10,6 +10,10 @@ Dengan ClassXpert, pengguna dapat belajar kapan saja dan di mana saja, sehingga 
 
 [ClassXpert Documentation](https://youtu.be/VEqdzHgNepw)
 
+## ClassXpert Website
+
+[ClassXpert Website](https://dev.unimasoft.id/ClassXpert/public)
+
 ## Installation
 
 Make sure you have Laravel 11 installed

@@ -278,7 +278,8 @@
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
                                             <div class="read-more-btn text-start text-md-end">
-                                                <a class="rbt-btn rbt-switch-btn btn-border btn-sm" href="/course">
+                                                <a class="rbt-btn rbt-switch-btn btn-border btn-sm"
+                                                    href="{{ route('courses.index') }}">
                                                     <span data-text="View All Course">View All Course</span>
                                                 </a>
                                             </div>

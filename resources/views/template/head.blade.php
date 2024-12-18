@@ -7,7 +7,10 @@
     <title>@yield('title') - ClassXpert</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta name="theme-color" content="#2f57ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#192335" media="(prefers-color-scheme: dark)">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.svg') }}">
 

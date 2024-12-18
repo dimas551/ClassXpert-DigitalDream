@@ -5,7 +5,7 @@
 
                 <div class="header-left">
                     <div class="logo logo-dark">
-                        <a href="/">
+                        <a href="{{ route('home') }}">
                             <img src="{{ asset('assets/images/logo/logo-dark.svg') }}" alt="ClassXpert">
                         </a>
                     </div>
@@ -21,19 +21,23 @@
                     <nav class="mainmenu-nav">
                         <ul class="mainmenu">
                             <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="/" class="{{ Request::is('/') ? 'active' : '' }}">Home</a>
+                                <a href="{{ route('home') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a>
                             </li>
                             <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="/course" class="{{ Request::is('course*') ? 'active' : '' }}">Course</a>
+                                <a href="{{ route('courses.index') }}"
+                                    class="{{ Request::is('course*') ? 'active' : '' }}">Course</a>
                             </li>
                             <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="/article" class="{{ Request::is('article*') ? 'active' : '' }}">Article</a>
+                                <a href="{{ route('article.index') }}"
+                                    class="{{ Request::is('article*') ? 'active' : '' }}">Article</a>
                             </li>
                             <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="/faq" class="{{ Request::is('faq') ? 'active' : '' }}">Faq</a>
+                                <a href="{{ route('faq.index') }}"
+                                    class="{{ Request::is('faq') ? 'active' : '' }}">Faq</a>
                             </li>
                             <li class="with-megamenu has-menu-child-item position-static">
-                                <a href="/contact" class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a>
+                                <a href="{{ route('contact.index') }}"
+                                    class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a>
                             </li>
                             @auth
                                 @if (Auth::user()->utype === 'admin')
@@ -42,29 +46,25 @@
                                             Manage Admin <i class="feather-chevron-down"></i>
                                         </a>
                                         <ul class="submenu">
-                                            <li><a href="/admin/course"
+                                            <li><a href="{{ route('admin.course.index') }}"
                                                     class="{{ Request::is('*admin/course*') ? 'active' : '' }}">Manage
-                                                    Course</a>
-                                            </li>
-                                            <li><a href="/admin/article"
+                                                    Course</a></li>
+                                            <li><a href="{{ route('admin.article.index') }}"
                                                     class="{{ Request::is('*admin/article') ? 'active' : '' }}">Manage
-                                                    Article</a>
+                                                    Article</a></li>
+                                            <li><a href="{{ route('admin.faq.index') }}"
+                                                    class="{{ Request::is('*admin/faq') ? 'active' : '' }}">Manage Faq</a>
                                             </li>
-                                            <li><a href="/admin/faq"
-                                                    class="{{ Request::is('*admin/faq') ? 'active' : '' }}">Manage
-                                                    Faq</a>
-                                            </li>
-                                            <li><a href="/admin/website"
+                                            <li><a href="{{ route('admin.website.index') }}"
                                                     class="{{ Request::is('*admin/website') ? 'active' : '' }}">Manage
-                                                    Website</a>
-                                            </li>
-                                            <li><a href="/admin/user"
+                                                    Website</a></li>
+                                            <li><a href="{{ route('admin.user.index') }}"
                                                     class="{{ Request::is('*admin/user') ? 'active' : '' }}">Manage
                                                     User</a></li>
-                                            <li><a href="/admin/admin"
+                                            <li><a href="{{ route('admin.admin.index') }}"
                                                     class="{{ Request::is('*admin/admin') ? 'active' : '' }}">Manage
                                                     Admin</a></li>
-                                            <li><a href="/admin/mail"
+                                            <li><a href="{{ route('admin.mail.index') }}"
                                                     class="{{ Request::is('*admin/mail') ? 'active' : '' }}">Manage
                                                     Mail</a></li>
                                         </ul>
@@ -158,13 +158,13 @@
             <div class="content">
                 <div class="logo">
                     <div class="logo logo-dark">
-                        <a href="/">
+                        <a href="{{ route('home') }}">
                             <img src="{{ asset('assets/images/logo/logo-dark.svg') }}" alt="ClassXpert">
                         </a>
                     </div>
 
                     <div class="logo d-none logo-light">
-                        <a href="/">
+                        <a href="{{ route('home') }}">
                             <img src="{{ asset('assets/images/logo/logo-dark.svg') }}" alt="ClassXpert">
                         </a>
                     </div>
@@ -177,67 +177,56 @@
 
         <nav class="mainmenu-nav">
             <ul class="mainmenu">
-                <li class="position-static">
-                    <a href="/" class="{{ Request::is('/') ? 'active' : '' }}">Home</a>
+                <li class="with-megamenu has-menu-child-item position-static">
+                    <a href="{{ route('home') }}" class="{{ Request::is('/') ? 'active' : '' }}">Home</a>
                 </li>
-                <li class="position-static">
-                    <a href="/course" class="{{ Request::is('course*') ? 'active' : '' }}">Course</a>
+                <li class="with-megamenu has-menu-child-item position-static">
+                    <a href="{{ route('courses.index') }}"
+                        class="{{ Request::is('course*') ? 'active' : '' }}">Course</a>
                 </li>
-                <li class="position-static">
-                    <a href="/article" class="{{ Request::is('article*') ? 'active' : '' }}">Article</a>
+                <li class="with-megamenu has-menu-child-item position-static">
+                    <a href="{{ route('article.index') }}"
+                        class="{{ Request::is('article*') ? 'active' : '' }}">Article</a>
                 </li>
-                <li class="position-static">
-                    <a href="/faq" class="{{ Request::is('faq') ? 'active' : '' }}">Faq</a>
+                <li class="with-megamenu has-menu-child-item position-static">
+                    <a href="{{ route('faq.index') }}" class="{{ Request::is('faq') ? 'active' : '' }}">Faq</a>
                 </li>
-                <li class="position-static">
-                    <a href="/contact" class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a>
+                <li class="with-megamenu has-menu-child-item position-static">
+                    <a href="{{ route('contact.index') }}"
+                        class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a>
                 </li>
-
                 @auth
                     @if (Auth::user()->utype === 'admin')
-                        <li class="with-megamenu has-menu-child-item position-static">
-                            <a href="#" class="{{ Request::is('admin*') ? 'active' : '' }}">Manage Admin <i
-                                    class="feather-chevron-down"></i></a>
-                            <div class="rbt-megamenu grid-item-3">
-                                <div class="wrapper">
-                                    <div class="row row--15 single-dropdown-menu-presentation">
-                                        <div class="col-lg-4 col-xxl-4 single-mega-item">
-                                            <ul class="mega-menu-item">
-                                                <li><a href="/admin/course"
-                                                        class="{{ Request::is('*admin/course*') ? 'active' : '' }}">Manage
-                                                        Course</a>
-                                                </li>
-                                                <li><a href="/admin/article"
-                                                        class="{{ Request::is('*admin/article') ? 'active' : '' }}">Manage
-                                                        Article</a></li>
-                                                <li><a href="/admin/faq"
-                                                        class="{{ Request::is('*admin/faq') ? 'active' : '' }}">Manage
-                                                        Faq</a>
-                                                </li>
-                                                <li><a href="/admin/website"
-                                                        class="{{ Request::is('*admin/website') ? 'active' : '' }}">Manage
-                                                        Website</a>
-                                                </li>
-                                                <li><a href="/admin/user"
-                                                        class="{{ Request::is('*admin/user') ? 'active' : '' }}">Manage
-                                                        User</a>
-                                                </li>
-                                                <li><a href="/admin/admin"
-                                                        class="{{ Request::is('*admin/admin') ? 'active' : '' }}">Manage
-                                                        Admin</a></li>
-                                                <li><a href="/admin/mail"
-                                                        class="{{ Request::is('*admin/mail') ? 'active' : '' }}">Manage
-                                                        Mail</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                        <li class="has-dropdown has-menu-child-item">
+                            <a href="#" class="{{ Request::is('admin*') ? 'active' : '' }}">
+                                Manage Admin <i class="feather-chevron-down"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="{{ route('admin.course.index') }}"
+                                        class="{{ Request::is('*admin/course*') ? 'active' : '' }}">Manage
+                                        Course</a></li>
+                                <li><a href="{{ route('admin.article.index') }}"
+                                        class="{{ Request::is('*admin/article') ? 'active' : '' }}">Manage
+                                        Article</a></li>
+                                <li><a href="{{ route('admin.faq.index') }}"
+                                        class="{{ Request::is('*admin/faq') ? 'active' : '' }}">Manage Faq</a>
+                                </li>
+                                <li><a href="{{ route('admin.website.index') }}"
+                                        class="{{ Request::is('*admin/website') ? 'active' : '' }}">Manage
+                                        Website</a></li>
+                                <li><a href="{{ route('admin.user.index') }}"
+                                        class="{{ Request::is('*admin/user') ? 'active' : '' }}">Manage
+                                        User</a></li>
+                                <li><a href="{{ route('admin.admin.index') }}"
+                                        class="{{ Request::is('*admin/admin') ? 'active' : '' }}">Manage
+                                        Admin</a></li>
+                                <li><a href="{{ route('admin.mail.index') }}"
+                                        class="{{ Request::is('*admin/mail') ? 'active' : '' }}">Manage
+                                        Mail</a></li>
+                            </ul>
                         </li>
                     @endif
                 @endauth
-
             </ul>
         </nav>
 
@@ -246,7 +235,7 @@
             @guest
                 <div class="rbt-btn-wrapper mb--20">
                     <a class="rbt-btn btn-border-gradient radius-round btn-sm hover-transform-none w-100 justify-content-center text-center"
-                        href="/login">
+                        href="{{ route('login') }}">
                         <span>Login</span>
                     </a>
                 </div>
@@ -267,19 +256,19 @@
             <div class="social-share-wrapper">
                 <span class="rbt-short-title d-block">Find With Us</span>
                 <ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
-                    <li><a href="https://www.facebook.com/">
-                            <i class="feather-facebook"></i>
+                    <li><a href="tel:+62 896-6402-1388" target="_blank">
+                            <i class="feather-phone"></i>
                         </a>
                     </li>
-                    <li><a href="https://www.twitter.com/">
-                            <i class="feather-twitter"></i>
+                    <li><a href="mailto:digitaldream320@gmail.com" target="_blank">
+                            <i class="feather-mail"></i>
                         </a>
                     </li>
-                    <li><a href="https://www.instagram.com/">
+                    <li><a href="https://www.instagram.com/digitalndream" target="_blank">
                             <i class="feather-instagram"></i>
                         </a>
                     </li>
-                    <li><a href="https://www.linkdin.com/">
+                    <li><a href="https://linkedin.com/company/digitalndream" target="_blank">
                             <i class="feather-linkedin"></i>
                         </a>
                     </li>

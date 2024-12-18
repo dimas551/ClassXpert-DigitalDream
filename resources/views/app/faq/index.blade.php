@@ -12,7 +12,7 @@
                         <div class="breadcrumb-inner text-center">
                             <h2 class="title">@yield('title')</h2>
                             <ul class="page-list">
-                                <li class="rbt-breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="rbt-breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                                 <li>
                                     <div class="icon-right"><i class="feather-chevron-right"></i></div>
                                 </li>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="call-to-btn text-start text-lg-end">
-                            <a class="rbt-btn bg-white-opacity icon-hover" href="/contact">
+                            <a class="rbt-btn bg-white-opacity icon-hover" href="{{ route('contact.index') }}">
                                 <span class="btn-text">Contact Us</span>
                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                             </a>

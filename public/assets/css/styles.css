@@ -1,110 +1,4 @@
 @charset "UTF-8";
-/**************************************************************
-
-	STYLESHEET INDEXING
-	|
-	|
-	|___ Default Styles
-	|	|
-	|	|___ variables
-	|	|___ mixins
-	|	|___ reset
-	|	|___ typography
-	|	|___ extend
-	|	|___ animations
-	|	|___ shortcode
-	|	|___ spacing
-	|	|___ edu-common
-	|	|___ forms
-	|	|___ text-animation
-	|
-	|
-	|___Header Styles
-	|	|___ header-common
-	|	|___ headertop
-	|	|___ offertopbar
-	|	|___ headermid
-	|	|___ social-share
-	|	|___ header
-	|	|___ nav
-	|	|___ mega-menu
-	|	|___ mobilemenu
-	|	|___ offcanvas
-	|	|___ one-page-navigation
-	|
-	|
-	|___Elements Styles
-	|	|___ button 
-	|	|___ section-title
-	|	|___ breadcrumb
-	|	|___ card
-	|	|___ course-meta
-	|	|___ service
-	|	|___ feature
-	|	|___ about
-	|	|___ callto-action
-	|	|___ accordion
-	|	|___ image-gallery
-	|	|___ counterup
-	|	|___ pricingtable
-	|	|___ badge
-	|	|___ team
-	|	|___ social
-	|	|___ pagination
-	|	|___ backtotop
-	|	|___ newsletterform
-	|	|___ brand
-	|	|___ portfolio
-	|	|___ contact
-	|	|___ testimonial
-	|	|___ advance-tab
-	|	|___ category
-	|	|___ instagram
-	|	|___ split
-	|	|___ countdown
-	|	|___ progressbar
-	|	|___ category-box
-	|	|___ course-filter
-	|	|___ modal
-	|	|___ list
-	|	|___ search
-	|	|___ video
-	|	|___ 404
-
-	|___Blog Styles
-	|	|___ blog 
-	|	|___ post-default 
-	|	|___ sidebar 
-	|	|___ blog-details 
-	|	|___ unit-test 
-
-	|___Shop Styles
-	|	|___ shop 
-	|	|___ product-details 
-	|	|___ my-account 
-	|	|___ cart 
-	|	|___ checkout 
-	|	|___ minicart 
-
-	|___Template Styles
-	|	|___ banner 
-	|	|___ course-details 
-	|	|___ course-sidebar 
-	|	|___ contact 
-	|	|___ sidebar 
-	|	|___ course-action-bottom 
-
-
-	|___Footer Styles
-	|	|___ footer 
-	|	|___ copyright 
-	|	|___ back-to-top 
-	|	|___ dark 
-	|
-	|
-	|___ END STYLESHEET INDEXING
-
-***************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
@@ -602,7 +496,7 @@ blockquote b {
  * Typography
  */
 /*
-	font-family: 'Plus Jakarta Sans', sans-serif; 
+	font-family: 'Plus Jakarta Sans', sans-serif;
 */
 * {
   box-sizing: border-box;
@@ -1061,7 +955,7 @@ ol ul {
     All Extend Here
 =======================*/
 /* -----------------------------
-    Hover Dropdown Extend  
+    Hover Dropdown Extend
 --------------------------------*/
 .rbt-header .mainmenu-nav .mainmenu li.with-megamenu .rbt-megamenu, .rbt-header .mainmenu-nav .mainmenu li.has-dropdown .submenu, .rbt-user-wrapper .rbt-user-menu-list-wrapper, .rbt-category-menu-wrapper .category-dropdown-menu, ul.rbt-dropdown-menu li .sub-menu {
   position: absolute;
@@ -1616,7 +1510,7 @@ ul.rbt-dropdown-menu li .sub-menu li a, ul.rbt-dropdown-menu li a .right-icon, u
 }
 
 /*===============================
-    Background Color 
+    Background Color
 =================================*/
 .bg-color-primary {
   background: var(--color-primary);
@@ -2077,7 +1971,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*=============================
-	Overlay styles 
+	Overlay styles
 ==============================*/
 [data-overlay],
 [data-black-overlay],
@@ -2327,7 +2221,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*=========================
-    Section Separation 
+    Section Separation
 ==========================*/
 .slick-dotted.slick-slider {
   margin-bottom: 0;
@@ -8400,7 +8294,7 @@ input[disabled] {
   display: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -8456,9 +8350,9 @@ Primary style
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-  xrotate-1 
+  xrotate-1
 
   -------------------------------- */
 .cd-headline.rotate-1 .cd-words-wrapper {
@@ -8630,9 +8524,9 @@ Primary style
     opacity: 0;
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xtype 
+  xtype
 
   -------------------------------- */
 .cd-headline.type .cd-words-wrapper {
@@ -8747,9 +8641,9 @@ Primary style
     opacity: 0;
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xrotate-2 
+  xrotate-2
 
   -------------------------------- */
 .cd-headline.rotate-2 .cd-words-wrapper {
@@ -8936,9 +8830,9 @@ Primary style
     transform: translateZ(-20px) rotateX(-90deg);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xloading-bar 
+  xloading-bar
 
   -------------------------------- */
 .cd-headline.loading-bar span {
@@ -8986,9 +8880,9 @@ Primary style
   top: 0;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-  xslide 
+  xslide
 
   -------------------------------- */
 .cd-headline.slide span {
@@ -9127,9 +9021,9 @@ Primary style
     transform: translateY(100%);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xclip 
+  xclip
 
   -------------------------------- */
 .cd-headline.clip span {
@@ -9160,9 +9054,9 @@ Primary style
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-  xzoom 
+  xzoom
 
   -------------------------------- */
 .cd-headline.zoom .cd-words-wrapper {
@@ -9264,9 +9158,9 @@ Primary style
     transform: translateZ(-100px);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xrotate-3 
+  xrotate-3
 
   -------------------------------- */
 .cd-headline.rotate-3 .cd-words-wrapper {
@@ -9387,9 +9281,9 @@ Primary style
     transform: rotateY(-180deg);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xscale 
+  xscale
 
   -------------------------------- */
 .cd-headline.scale b {
@@ -9527,9 +9421,9 @@ Primary style
     opacity: 0;
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
-  xpush 
+  xpush
 
   -------------------------------- */
 .cd-headline.push b {
@@ -10427,7 +10321,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*-------------------------
-    Header Animation  
+    Header Animation
 --------------------------*/
 @keyframes headerSticky {
   0% {
@@ -10446,7 +10340,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
   }
 }
 /*---------------------
-    Header Top  
+    Header Top
 ----------------------*/
 .rbt-header-top.rbt-header-top-1 {
   position: relative;
@@ -10583,7 +10477,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*----------------------------
-    Header Top Bar  
+    Header Top Bar
 ----------------------------*/
 .rbt-header-top-2 {
   border-bottom: 1px solid var(--color-border);
@@ -10757,14 +10651,14 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*------------------------------------------
-    Header With TopBar Transparent  
+    Header With TopBar Transparent
 ----------------------------------------------*/
 .rbt-transparent-header .rbt-header-top {
   border-color: #525260;
 }
 
 /*--------------------------
-    Header Top Styles  
+    Header Top Styles
 -----------------------------*/
 .rbt-header-campaign {
   padding: 8px 0;
@@ -10858,7 +10752,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*---------------------------
-    Header Mid Style  
+    Header Mid Style
 ----------------------------*/
 .rbt-header-middle {
   padding-top: 15px;
@@ -10890,7 +10784,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*---------------------
-    Social Share  
+    Social Share
 -----------------------*/
 .social-share-transparent {
   display: flex;
@@ -10946,7 +10840,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*----------------------------
-    Navigation Position  
+    Navigation Position
 ------------------------------*/
 .mainbar-row {
   display: flex;
@@ -10966,7 +10860,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*-----------------------
-    Header Style  
+    Header Style
 ---------------------------*/
 .rbt-header {
   position: relative;
@@ -11157,7 +11051,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*--------------------------
-    Navigation Styles 
+    Navigation Styles
 ----------------------------*/
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -11429,7 +11323,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*----------------------------
-    Mega Menu Options  
+    Mega Menu Options
 ------------------------------*/
 .mega-top-banner {
   background-image: url(../images/course/category-10.png), radial-gradient(100% 100% at 100% 0%, #484C7A 0%, #23263B 100%);
@@ -11529,7 +11423,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*-----------------------
-    Single Demo  
+    Single Demo
 ------------------------*/
 @media only screen and (max-width: 1199px) {
   .single-dropdown-menu-presentation .single-mega-item {
@@ -11670,7 +11564,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*----------------------
-    Load More Btn  
+    Load More Btn
 -----------------------*/
 .rbt-megamenu .load-demo-btn {
   position: absolute;
@@ -11682,7 +11576,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*----------------------
-    Extra Css  
+    Extra Css
 ------------------------*/
 .rbt-header .rbt-border-bottom-light .mainmenu-nav .mainmenu li.with-megamenu .rbt-megamenu .wrapper {
   border-top: 0 none;
@@ -11694,10 +11588,10 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*--------------------
-    Mega Menu  
+    Mega Menu
 -----------------------*/
 /*------------------------------
-    Popup Menu Styles  
+    Popup Menu Styles
 --------------------------------*/
 .popup-mobile-menu {
   z-index: 9999;
@@ -11973,7 +11867,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*--------------------------------
-    Offcanvas Menu  
+    Offcanvas Menu
 --------------------------------*/
 .rbt-offcanvas-trigger .offcanvas-trigger {
   display: block;
@@ -12065,7 +11959,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*-------------------------------
-    Offcanvas Menu Sidebar  
+    Offcanvas Menu Sidebar
 --------------------------------*/
 .side-menu,
 .rbt-cart-side-menu {
@@ -12236,7 +12130,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*---------------------------------
-    Rainbow Offcanvas Side Menu  
+    Rainbow Offcanvas Side Menu
 -----------------------------------*/
 .rbt-offcanvas-side-menu {
   z-index: 9999;
@@ -12351,7 +12245,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
 }
 
 /*---------------------------------------
-    One Page Navigation Inner Section 
+    One Page Navigation Inner Section
 ------------------------------------------*/
 .rbt-inner-onepage-navigation {
   border-radius: 500px;
@@ -12980,7 +12874,7 @@ fieldset:disabled {
 }
 
 /*-------------------------------
-    Button Bg Color Variation 
+    Button Bg Color Variation
 --------------------------------*/
 a.bg-primary-opacity:hover,
 button.bg-primary-opacity:hover {
@@ -13065,7 +12959,7 @@ button.btn-underline-gradient:hover::after {
 }
 
 /*-----------------------
-    Modern Button  
+    Modern Button
 ------------------------*/
 a.rbt-moderbt-btn {
   position: relative;
@@ -13117,7 +13011,7 @@ a.rbt-moderbt-btn:hover::before {
 }
 
 /*----------------------------------
-    Education Transparent Button 
+    Education Transparent Button
 ------------------------------------*/
 a.rbt-btn-link,
 button.rbt-btn-link,
@@ -13196,7 +13090,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------
- Video Player Button 
+ Video Player Button
 -------------------------*/
 .video-popup-wrapper {
   position: relative;
@@ -13431,7 +13325,7 @@ span.transparent-button:hover i {
 }
 
 /*====================
-    Breadcrump Area 
+    Breadcrump Area
 ======================*/
 .rbt-breadcrumb-default .title {
   color: var(--color-heading);
@@ -13455,7 +13349,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------------
-    Breadcrumd Page List  
+    Breadcrumd Page List
 -------------------------------*/
 .page-list {
   padding: 0;
@@ -13495,7 +13389,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------------
-    Breadcrumb Style Two  
+    Breadcrumb Style Two
 ------------------------------*/
 .breadcrumb-style-max-width {
   max-width: 1085px;
@@ -13627,7 +13521,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------------
-    Breadcrumb Style Main  
+    Breadcrumb Style Main
 ------------------------------*/
 .rbt-page-banner-wrapper {
   display: flex;
@@ -13709,7 +13603,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------------
-    Breadcrumb Style Three  
+    Breadcrumb Style Three
 ------------------------------*/
 .rbt-breadcrumb-default.rbt-breadcrumb-style-3 {
   position: relative;
@@ -13781,8 +13675,8 @@ span.transparent-button:hover i {
   gap: 5px;
 }
 
-/*----------------------------- 
-    Edu Course Style 
+/*-----------------------------
+    Edu Course Style
 -------------------------------*/
 .rbt-card {
   overflow: hidden;
@@ -14567,7 +14461,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------------
-    Service Card Styles  
+    Service Card Styles
 ------------------------------*/
 .rbt-service.rbt-service-1 {
   border-radius: 6px;
@@ -14773,7 +14667,7 @@ span.transparent-button:hover i {
 }
 
 /*-------------------------------
-    Service Style Five  
+    Service Style Five
 ---------------------------------*/
 .service-card-5 .inner {
   border-radius: 5px;
@@ -14898,7 +14792,7 @@ span.transparent-button:hover i {
 }
 
 /*-------------------------------
-    Service Style Five  
+    Service Style Five
 ---------------------------------*/
 .service-card-6 {
   height: 100%;
@@ -14977,7 +14871,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------
-    Swiper Slider  
+    Swiper Slider
 ------------------------*/
 .slick-initialized .slick-slide {
   margin-bottom: -10px;
@@ -15048,7 +14942,7 @@ span.transparent-button:hover i {
 }
 
 /*---------------------------
-    Slick Arrow Styles  
+    Slick Arrow Styles
 -----------------------------*/
 .rbt-arrow-between {
   position: relative;
@@ -15223,7 +15117,7 @@ span.transparent-button:hover i {
 }
 
 /*------------------------
-    Feature Styles  
+    Feature Styles
 -------------------------*/
 .rbt-feature {
   display: flex;
@@ -15351,7 +15245,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------
-    About Styles  
+    About Styles
 ------------------------*/
 .about-style-1 {
   position: relative;
@@ -15515,7 +15409,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------------
-    Call To Action Styles  
+    Call To Action Styles
 ------------------------------*/
 .rbt-callto-action.callto-action-default {
   position: relative;
@@ -15548,7 +15442,7 @@ span.transparent-button:hover i {
 }
 
 /*--------------------------------
-    Call To Action Style  
+    Call To Action Style
 --------------------------------*/
 .rbt-cta-default.style-2 .content-wrapper {
   background-color: var(--color-white);
@@ -15744,7 +15638,7 @@ span.transparent-button:hover i {
 }
 
 /*-------------------------
-    Accordion Area  
+    Accordion Area
 --------------------------*/
 .rbt-accordion-style .card {
   background: var(--color-primary-lighter);
@@ -15916,7 +15810,7 @@ span.transparent-button:hover i {
 }
 
 /*--------------------------
-    Rbt Card Table  
+    Rbt Card Table
 --------------------------*/
 .rbt-table {
   border: 0 none;
@@ -15959,7 +15853,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------------
-    Accordion Color White  
+    Accordion Color White
 -------------------------------*/
 .rbt-accordion-color-white .rbt-accordion-style .card .card-header button[aria-expanded=true] {
   color: var(--color-white);
@@ -16047,7 +15941,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------
-    Edu Image Gallery  
+    Edu Image Gallery
 ------------------------*/
 .rbt-image-gallery-1 {
   position: relative;
@@ -16139,7 +16033,7 @@ span.transparent-button:hover i {
 }
 
 /*------------------------
-    Counter Up Styles  
+    Counter Up Styles
 -------------------------*/
 .rbt-counterup {
   background: var(--color-white);
@@ -16404,7 +16298,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------
-    Black Overlay  
+    Black Overlay
 ------------------------*/
 .bg-black-overlay .rbt-counterup .inner .content .counter {
   color: var(--color-white);
@@ -16487,7 +16381,7 @@ span.transparent-button:hover i {
 }
 
 /*--------------------------
-    Pricing Table  
+    Pricing Table
 ----------------------------*/
 .pricing-billing-duration {
   text-align: right;
@@ -16744,7 +16638,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------------
-    Advance Pricing Table  
+    Advance Pricing Table
 ------------------------------*/
 .advance-pricing {
   background: var(--color-white);
@@ -16839,7 +16733,7 @@ span.transparent-button:hover i {
 }
 
 /*------------------------
-    Edu Badge Styles  
+    Edu Badge Styles
 --------------------------*/
 .rbt-badge-group {
   display: flex;
@@ -17540,7 +17434,7 @@ span.transparent-button:hover i {
 }
 
 /*---------------------
-    Team Tab   
+    Team Tab
 --------------------*/
 .rbt-team-tab-thumb {
   list-style: none;
@@ -17778,7 +17672,7 @@ span.transparent-button:hover i {
 }
 
 /*---------------------------
-    Team Modal Style  
+    Team Modal Style
 -----------------------------*/
 .rbt-team-modal-thumb {
   list-style: none;
@@ -17852,7 +17746,7 @@ span.transparent-button:hover i {
 }
 
 /*-----------------------
-    Social Icons 
+    Social Icons
 -------------------------*/
 .social-default {
   display: flex;
@@ -17959,7 +17853,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------------
-    Edu Pagination Style  
+    Edu Pagination Style
 ------------------------------*/
 .rbt-pagination {
   margin: -8px;
@@ -18011,7 +17905,7 @@ span.transparent-button:hover i {
 }
 
 /*-------------------------
-    Back To Top  
+    Back To Top
 ---------------------------*/
 @-webkit-keyframes border-transform {
   0%, 100% {
@@ -18118,7 +18012,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------
-    Newsletter Styles  
+    Newsletter Styles
 ------------------------*/
 .newsletter-form input {
   flex-grow: 1;
@@ -18179,7 +18073,7 @@ span.transparent-button:hover i {
 }
 
 /*-------------------------------
-    Newsletter Styles One 
+    Newsletter Styles One
 ----------------------------------*/
 .newsletter-style-1 {
   padding: 100px 50px;
@@ -18226,7 +18120,7 @@ span.transparent-button:hover i {
 }
 
 /*---------------------
-    Brand Styles 
+    Brand Styles
 ----------------------*/
 .brand-style-1 {
   padding: 0;
@@ -18568,7 +18462,7 @@ span.transparent-button:hover i {
 }
 
 /*----------------------------------
-    Portfolio Grid Layout  
+    Portfolio Grid Layout
 ----------------------------------*/
 .grid-metro2 {
   margin: 0 -15px;
@@ -18674,7 +18568,7 @@ span.transparent-button:hover i {
 }
 
 /*---------------------
-    Extra Css  
+    Extra Css
 -----------------------*/
 .bg-gradient-8 .filter-button-default button,
 .bg-gradient-8 .filter-tab-button button {
@@ -18907,7 +18801,7 @@ span.transparent-button:hover i {
 }
 
 /* ---------------------------
-Testimonial Styles 
+Testimonial Styles
 ------------------------------*/
 .rbt-testimonial-content .inner {
   padding-bottom: 20px;
@@ -19029,7 +18923,7 @@ Testimonial Styles
 }
 
 /* ------------------------------
-Testimonial Thumbnail 
+Testimonial Thumbnail
 -------------------------------- */
 ul.testimonial-thumb-wrapper {
   list-style: none;
@@ -19125,7 +19019,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /* ------------------------------
-    Testimonial Style Two 
+    Testimonial Style Two
 -------------------------------- */
 .scroll-animation-wrapper {
   position: relative;
@@ -19660,7 +19554,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*-------------------------
-    Advance Tab Style Two  
+    Advance Tab Style Two
 --------------------------*/
 .tab-button-style-2 {
   border-bottom: 2px solid var(--color-border);
@@ -19761,7 +19655,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*---------------------
-    Tab Styles  
+    Tab Styles
 -----------------------*/
 .rbt-default-tab {
   position: relative;
@@ -19834,7 +19728,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*----------------------
-    Category Styles  
+    Category Styles
 -------------------------*/
 .rbt-category-gallery {
   position: relative;
@@ -19888,7 +19782,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*------------------------------
-    Category Update Style  
+    Category Update Style
 --------------------------------*/
 .rbt-category-update {
   position: relative;
@@ -20066,7 +19960,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*--------------------------
-    split Area Styles  
+    split Area Styles
 ----------------------------*/
 .rbt-splite-style .shape img {
   max-height: 96px;
@@ -20147,7 +20041,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*------------------------
-    Countdown Styles  
+    Countdown Styles
 -------------------------*/
 .countdown-style-1 .countdown {
   display: flex;
@@ -20196,7 +20090,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*-----------------------
-    Progress Bar 
+    Progress Bar
 -----------------------*/
 .single-progress + .single-progress {
   margin-top: 40px;
@@ -20289,7 +20183,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*-----------------------------------
-    Radial Progress 
+    Radial Progress
 -----------------------------------*/
 .radial-progress-single {
   text-align: center;
@@ -20358,7 +20252,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*--------------------------
-    Category Box Layout  
+    Category Box Layout
 ----------------------------*/
 .rbt-cat-box-1 {
   display: block;
@@ -20698,7 +20592,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   transform: translate3d(0, -10px, 0);
 }
 /*---------------------------
-    Filter Exanded  
+    Filter Exanded
 -----------------------------*/
 .default-exp-wrapper {
   border-top: 1px solid var(--color-border);
@@ -20788,7 +20682,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*-------------------------
-    Price Filter  
+    Price Filter
 --------------------------*/
 .price--output input {
   border: 0 none;
@@ -20899,7 +20793,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*-------------------
-    Bootstrap Select  
+    Bootstrap Select
 ----------------------*/
 .rbt-modern-select .bootstrap-select button.btn-light {
   border: 0 none;
@@ -21116,7 +21010,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 
 /*-----------------------
-    Team Styles  
+    Team Styles
 ------------------------*/
 body.modal-open {
   padding-right: 0 !important;
@@ -21256,7 +21150,7 @@ body.modal-open {
 }
 
 /*----------------------
-    Rbt List Style  
+    Rbt List Style
 ------------------------*/
 .rbt-list-style-1 li {
   display: flex;
@@ -21382,7 +21276,7 @@ body.modal-open {
 }
 
 /*-------------------------------
- Modern Course Features  
+ Modern Course Features
 -------------------------------*/
 .modern-course-features-box {
   background: var(--primary-opacity);
@@ -21526,7 +21420,7 @@ body.modal-open {
 }
 
 /*---------------------------
-    Course Feature List  
+    Course Feature List
 -----------------------------*/
 .course-feature-list {
   display: flex;
@@ -21752,7 +21646,7 @@ body.modal-open {
 }
 
 /*-------------------------
-    Search Style Default  
+    Search Style Default
 --------------------------*/
 .rbt-search-style {
   position: relative;
@@ -21786,7 +21680,7 @@ body.modal-open {
 }
 
 /*-------------------------
-    Search Style One  
+    Search Style One
 --------------------------*/
 .rbt-search-style-1 {
   position: relative;
@@ -21815,7 +21709,7 @@ body.modal-open {
 }
 
 /*----------------------
-    RBT Video Styles  
+    RBT Video Styles
 -----------------------*/
 .mfp-bg {
   z-index: 9999;
@@ -21904,7 +21798,7 @@ img.mfp-img {
 }
 
 /*--------------------------
-    Switcher Styles  
+    Switcher Styles
 ---------------------------*/
 .my_switcher {
   position: fixed;
@@ -21986,7 +21880,7 @@ img.mfp-img {
 }
 
 /*----------------------
-    Error Styles  
+    Error Styles
 ------------------------*/
 .rbt-error-area .title {
   font-size: 150px;
@@ -22112,7 +22006,7 @@ figcaption {
 }
 
 /*-----------------------
-    Blog Meta  
+    Blog Meta
 -----------------------*/
 .blog-meta {
   display: flex;
@@ -22161,7 +22055,7 @@ figcaption {
 }
 
 /*---------------------------
-    Blog Sidebar Styles  
+    Blog Sidebar Styles
 ----------------------------*/
 .rbt-categori-leftbar {
   display: flex;
@@ -22342,7 +22236,7 @@ figcaption {
 }
 
 /*----------------------------
-    Blog Details Styles  
+    Blog Details Styles
 ----------------------------*/
 .blog-content-wrapper audio {
   display: block;
@@ -22509,7 +22403,7 @@ figcaption {
 }
 
 /*------------------------
-    Comment Post Total  
+    Comment Post Total
 ---------------------------*/
 .rbt-total-comment-post {
   display: flex;
@@ -22530,7 +22424,7 @@ figcaption {
 }
 
 /*------------------------
-    Comment Form  
+    Comment Form
 -------------------------*/
 .comment-respond {
   margin: 40px 0;
@@ -22544,7 +22438,7 @@ figcaption {
 }
 
 /* --------------------------
-    Comments Styles  
+    Comments Styles
 -----------------------------*/
 .comment-list ul.children {
   padding-left: 75px;
@@ -22644,7 +22538,7 @@ figcaption {
 }
 
 /*---------------------------
-    Unit Test Blog Details  
+    Unit Test Blog Details
 -----------------------------*/
 .wp-block-quote,
 blockquote,
@@ -22786,7 +22680,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*---------------------------
-    Product Details 
+    Product Details
 ----------------------------*/
 .pro-qty {
   max-width: 120px;
@@ -22950,7 +22844,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*----------------------
-    My Account  
+    My Account
 ------------------------*/
 .rbt-my-account-tab-button {
   flex-direction: column;
@@ -23675,7 +23569,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*---------------------
-    Minicart Style  
+    Minicart Style
 ---------------------*/
 .rbt-minicart-wrapper {
   padding: 0;
@@ -24207,7 +24101,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*------------------------------
-    Banner Style Home Two  
+    Banner Style Home Two
 -------------------------------*/
 .rbt-banner-2 {
   background-color: var(--color-light);
@@ -24264,7 +24158,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*-----------------------
-    Home 03 Banner 
+    Home 03 Banner
 ------------------------*/
 .rbt-banner-3 {
   overflow: hidden;
@@ -24405,7 +24299,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*-----------------------
-    Home 04 Banner  
+    Home 04 Banner
 ------------------------*/
 .rbt-banner-4 {
   position: relative;
@@ -24507,7 +24401,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*--------------------------------
-    Banner Home 06 && 12   
+    Banner Home 06 && 12
 --------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .rbt-banner-5 {
@@ -24708,7 +24602,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*--------------------------------------
-    Banner Home 07 && 09 && 13 
+    Banner Home 07 && 09 && 13
 ------------------------------------------*/
 .rbt-banner-6 .inner .rbt-badge {
   background: rgba(0, 0, 0, 0.45);
@@ -24972,7 +24866,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*--------------------------------------
-    Banner Home 10 && 14 && 15 &&  about 
+    Banner Home 10 && 14 && 15 &&  about
 ----------------------------------------*/
 .rbt-banner-8 .inner .meta-text {
   font-weight: 600;
@@ -25244,7 +25138,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*-----------------------
-    Banner Style 9  
+    Banner Style 9
 ------------------------*/
 .rbt-banner-9 {
   justify-content: center;
@@ -25303,7 +25197,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*-----------------------
-    Banner Style 10 
+    Banner Style 10
 ------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rbt-banner-10 {
@@ -25317,14 +25211,14 @@ blockquote.has-text-align-right cite,
 }
 
 /*-----------------------
-    Banner Style 11 
+    Banner Style 11
 ------------------------*/
 .rbt-banner-11 .rbt-course-meta-wrapper .rating {
   margin-left: 20px;
 }
 
 /*----------------------
- tool tip 
+ tool tip
 ------------------------*/
 .profile-share {
   display: flex;
@@ -25433,7 +25327,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*------------------------
-    Swiper Thumb  
+    Swiper Thumb
 -------------------------*/
 .rbt-swiper-thumb {
   position: absolute;
@@ -25494,17 +25388,17 @@ blockquote.has-text-align-right cite,
 }
 
 /*-------------------------
-    Course Details  
+    Course Details
 --------------------------*/
 /*-------------------------
-    Single Course Meta  
+    Single Course Meta
 --------------------------*/
 .rbt-single-course-meta .rbt-course-review {
   margin-left: 15px;
 }
 
 /*---------------------------
-    Video Course Content  
+    Video Course Content
 ----------------------------*/
 .rbt-course-main-content li a {
   display: flex;
@@ -25606,7 +25500,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*----------------------------
-    Rbt rating Styles  
+    Rbt rating Styles
 ------------------------------*/
 .rating-box {
   border-radius: 5px;
@@ -25688,7 +25582,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*---------------------------------
-    Featured Review List Wrapper  
+    Featured Review List Wrapper
 -----------------------------------*/
 .rbt-course-review.about-author {
   padding: 25px 0;
@@ -25702,7 +25596,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*---------------------------
-    Course Top  
+    Course Top
 ----------------------------*/
 .rbt-course-top-wrapper .select-label {
   opacity: 0.8;
@@ -25777,7 +25671,7 @@ blockquote.has-text-align-right cite,
 }
 
 /*-------------------------
-    Course Grid Column  
+    Course Grid Column
 ---------------------------*/
 .rbt-course-grid-column {
   display: flex;
@@ -25861,8 +25755,8 @@ blockquote.has-text-align-right cite,
   transition: none;
 }
 
-/*------------------------- 
-Course Sidebar 
+/*-------------------------
+Course Sidebar
 -------------------------*/
 .course-sidebar-top {
   margin-top: -500px;
@@ -26003,7 +25897,7 @@ Course Sidebar
 }
 
 /*------------------------
-    Contact Styles 
+    Contact Styles
 --------------------------*/
 .rbt-address {
   padding: 40px;
@@ -26057,10 +25951,10 @@ Course Sidebar
 }
 
 /*-----------------------
-    Course Sidebar  
+    Course Sidebar
 ------------------------*/
 /*-----------------------------
-    Rbt Sidebar Common Style 
+    Rbt Sidebar Common Style
 --------------------------------*/
 .rbt-check-group {
   position: relative;
@@ -26099,7 +25993,7 @@ Course Sidebar
 }
 
 /*---------------------------
-    Rbt Show More Button  
+    Rbt Show More Button
 ------------------------------*/
 .rbt-show-more-btn {
   font-size: 14px;
@@ -26188,7 +26082,7 @@ Course Sidebar
 }
 
 /*------------------------
-    Rbt Single Widget  
+    Rbt Single Widget
 -------------------------*/
 .rbt-single-widget {
   background: var(--color-white);
@@ -26345,7 +26239,7 @@ Course Sidebar
 }
 
 /*-----------------------------------
-    Instructor Dashboard Style  
+    Instructor Dashboard Style
 ----------------------------------*/
 .tutor-bg-photo {
   border-radius: 10px;
@@ -26422,7 +26316,7 @@ Course Sidebar
 }
 
 /*----------------------------
-    Instructor Dashboard  
+    Instructor Dashboard
 ------------------------------*/
 @media only screen and (max-width: 767px) {
   .rbt-dashboard-table .rbt-table {
@@ -26437,7 +26331,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Lesson Styles  
+    Lesson Styles
 -----------------------------*/
 .rbt-lesson-content-wrapper {
   display: flex;
@@ -26483,7 +26377,7 @@ Course Sidebar
 }
 
 /*-------------------------
-    Lesson Page Style  
+    Lesson Page Style
 --------------------------*/
 .rbt-lesson-leftsidebar .rbt-title-style-3,
 .rbt-lesson-leftsidebar .lesson-search-wrapper {
@@ -26657,7 +26551,7 @@ Course Sidebar
 }
 
 /*----------------------
-    Lesson Top Bar  
+    Lesson Top Bar
 -------------------------*/
 .lesson-top-bar {
   background: var(--color-primary);
@@ -26796,7 +26690,7 @@ Course Sidebar
 }
 
 /*----------------------
-    Copyright Styles  
+    Copyright Styles
 -----------------------*/
 .copyright-style-1 p {
   color: var(--color-body);
@@ -26837,10 +26731,10 @@ Course Sidebar
 }
 
 /*-------------------------
-    Back To Top  
+    Back To Top
 ---------------------------*/
 /*----------------------------
-    BG Color Darker  
+    BG Color Darker
 ------------------------------*/
 .bg-color-darker,
 .bg-color-dark {
@@ -26968,7 +26862,7 @@ Course Sidebar
 }
 
 /*----------------------------
-    Slider Default Style 
+    Slider Default Style
 ------------------------------*/
 .slider-fixed--height {
   width: 100%;
@@ -27238,7 +27132,7 @@ Course Sidebar
 }
 
 /*-----------------------
-    Service Area  
+    Service Area
 ------------------------*/
 @media only screen and (max-width: 767px) {
   .splash-service-main .service-wrapper {
@@ -27350,7 +27244,7 @@ Course Sidebar
 }
 
 /*-------------------------------
-    Modern Course Features  
+    Modern Course Features
 -------------------------------*/
 .top-features-box {
   background: linear-gradient(208.29deg, #F5D9D5 0%, #F5EAB4 42.92%, #99D9F5 100%);
@@ -27521,7 +27415,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Single Demo Area  
+    Single Demo Area
 ----------------------------*/
 .has-section-before-title {
   position: relative;
@@ -27725,7 +27619,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Inner Page Layout Area  
+    Inner Page Layout Area
 ------------------------------*/
 .rbt-inner-page-layout-area .rbt-splite-style .split-inner {
   padding-left: 200px;
@@ -27872,7 +27766,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Testimonial Styles  
+    Testimonial Styles
 ----------------------------*/
 .rbt-splash-testimonial-area .rbt-testimonial-box {
   height: 100%;
@@ -27901,7 +27795,7 @@ Course Sidebar
 }
 
 /*------------------------
-    Preview Service  
+    Preview Service
 --------------------------*/
 .rbt-splash-service {
   text-align: left;
@@ -28067,8 +27961,8 @@ Course Sidebar
   transform: translateY(0px);
 }
 
-/*------------------------ 
-    Call To Action Footer  
+/*------------------------
+    Call To Action Footer
 --------------------------*/
 .overlpping-call-to-action {
   padding-bottom: 340px;
@@ -28188,7 +28082,7 @@ Course Sidebar
 }
 
 /*---------------------------
-    Plugin Presentation 
+    Plugin Presentation
 ----------------------------*/
 .rbt-feature-column:nth-child(odd) {
   padding-top: 50px;
@@ -28255,7 +28149,7 @@ Course Sidebar
 }
 
 /*-----------------------------
-    All Feature Presentation 
+    All Feature Presentation
 -------------------------------*/
 .rbt-splash-feature-box {
   background-color: var(--color-white);
@@ -28584,7 +28478,7 @@ Course Sidebar
 }
 
 /*----------------------------
-    Slider Default Style 
+    Slider Default Style
 ------------------------------*/
 .slider-fixed--height {
   width: 100%;
@@ -28854,7 +28748,7 @@ Course Sidebar
 }
 
 /*-----------------------
-    Service Area  
+    Service Area
 ------------------------*/
 @media only screen and (max-width: 767px) {
   .splash-service-main .service-wrapper {
@@ -28966,7 +28860,7 @@ Course Sidebar
 }
 
 /*-------------------------------
-    Modern Course Features  
+    Modern Course Features
 -------------------------------*/
 .top-features-box {
   background: linear-gradient(208.29deg, #F5D9D5 0%, #F5EAB4 42.92%, #99D9F5 100%);
@@ -29137,7 +29031,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Single Demo Area  
+    Single Demo Area
 ----------------------------*/
 .has-section-before-title {
   position: relative;
@@ -29341,7 +29235,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Inner Page Layout Area  
+    Inner Page Layout Area
 ------------------------------*/
 .rbt-inner-page-layout-area .rbt-splite-style .split-inner {
   padding-left: 200px;
@@ -29488,7 +29382,7 @@ Course Sidebar
 }
 
 /*--------------------------
-    Testimonial Styles  
+    Testimonial Styles
 ----------------------------*/
 .rbt-splash-testimonial-area .rbt-testimonial-box {
   height: 100%;
@@ -29517,7 +29411,7 @@ Course Sidebar
 }
 
 /*------------------------
-    Preview Service  
+    Preview Service
 --------------------------*/
 .rbt-splash-service {
   text-align: left;
@@ -29683,8 +29577,8 @@ Course Sidebar
   transform: translateY(0px);
 }
 
-/*------------------------ 
-    Call To Action Footer  
+/*------------------------
+    Call To Action Footer
 --------------------------*/
 .overlpping-call-to-action {
   padding-bottom: 340px;
@@ -29804,7 +29698,7 @@ Course Sidebar
 }
 
 /*---------------------------
-    Plugin Presentation 
+    Plugin Presentation
 ----------------------------*/
 .rbt-feature-column:nth-child(odd) {
   padding-top: 50px;
@@ -29871,7 +29765,7 @@ Course Sidebar
 }
 
 /*-----------------------------
-    All Feature Presentation 
+    All Feature Presentation
 -------------------------------*/
 .rbt-splash-feature-box {
   background-color: var(--color-white);

@@ -122,7 +122,8 @@
                 <div class="row pb--60 pt--40">
                     <div class="col-lg-12">
                         <div class="load-more-btn btn-sm text-center">
-                            <a class="rbt-btn btn-gradient btn-lg btn-sm hover-icon-reverse" href="/course">
+                            <a class="rbt-btn btn-gradient btn-lg btn-sm hover-icon-reverse"
+                                href="{{ route('courses.index') }}">
                                 <span class="icon-reverse-wrapper">
                                     <span class="text-center">View All Course</span>
                                 </span>
@@ -156,8 +157,8 @@
                                         </h4>
 
                                         <div class="rbt-button-group justify-content-start">
-                                            <a class="rbt-btn btn-gradient" href="/register">Sign Up</a>
-                                            <a class="rbt-btn btn-border" href="/login">Login</a>
+                                            <a class="rbt-btn btn-gradient" href="{{ route('register') }}">Sign Up</a>
+                                            <a class="rbt-btn btn-border" href="{{ route('login') }}">Login</a>
                                         </div>
                                     </div>
                                 </div>
@@ -233,7 +234,8 @@
                 <div class="row mt--50">
                     <div class="col-lg-12">
                         <div class="load-more-btn btn-sm text-center">
-                            <a class="rbt-btn btn-gradient btn-lg btn-sm hover-icon-reverse" href="/article">
+                            <a class="rbt-btn btn-gradient btn-lg btn-sm hover-icon-reverse"
+                                href="{{ route('article.index') }}">
                                 <span class="icon-reverse-wrapper">
                                     <span class=" text-center">Discover More Article</span>
                                 </span>

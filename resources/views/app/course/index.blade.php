@@ -13,7 +13,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <ul class="page-list">
-                                    <li class="rbt-breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="rbt-breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                                     <li>
                                         <div class="icon-right"><i class="feather-chevron-right"></i></div>
                                     </li>

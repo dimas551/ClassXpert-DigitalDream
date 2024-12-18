@@ -22,7 +22,7 @@ Route::middleware('auth')->group(function () {
 });
 
 //Home
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Course Routes
 Route::get('/course', [CourseController::class, 'index'])->name('courses.index');

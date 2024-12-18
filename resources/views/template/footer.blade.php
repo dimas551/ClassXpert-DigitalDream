@@ -74,10 +74,10 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
                     <ul
                         class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
-                        <li><a href="/faq">Faq</a></li>
+                        <li><a href="{{ route('faq.index') }}">Faq</a></li>
 
                         @guest
-                            <li><a href="/login">Login & Register</a></li>
+                            <li><a href="{{ route('login') }}">Login & Register</a></li>
                         @endguest
 
                         @auth
