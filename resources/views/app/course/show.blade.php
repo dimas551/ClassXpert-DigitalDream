@@ -28,7 +28,6 @@
                                     <ul class="rbt-meta">
                                         <li><i class="feather-tag"></i>{{ $course->category->name }}</li>
                                         <li><i class="feather-globe"></i>{{ $course->language }}</li>
-                                        <li><i class="feather-award"></i>Certified Course</li>
                                     </ul>
                                 </div>
                             </div>
@@ -86,8 +85,6 @@
                                                     <li><span>Lessons</span><span
                                                             class="rbt-feature-value rbt-badge-5">{{ $course->materials->count() }}</span>
                                                     </li>
-                                                    <li><span>Certificate</span><span
-                                                            class="rbt-feature-value rbt-badge-5">Yes</span></li>
                                                 </ul>
                                             </div>
                                         </div>
